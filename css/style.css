@@ -1,0 +1,165 @@
+
+
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+header{
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    font-family: Syncopate,Arial, Helvetica, sans-serif;
+}
+
+header h1:hover{
+    letter-spacing: 2px;
+    transition: 1s;
+}
+
+
+header h1:not(:hover){
+    letter-spacing: 0px;
+    transition: 2s;
+    
+
+}
+
+header .Back{
+    letter-spacing: 5px;
+    text-decoration: none;
+    float:left;
+    color: blanchedalmond;
+}
+
+header .Next{
+    letter-spacing: 5px;
+    text-decoration: none;
+    float:right;
+    color: blanchedalmond;
+}
+
+header .Back:hover{
+    color: aliceblue;
+    text-decoration: line-through;
+}
+
+header .Next:hover{
+    color: aliceblue;
+    text-decoration: line-through;
+}
+
+.titulo_principal{
+    color: rgb(192, 218, 218);
+}
+
+.titulo_produto{
+    text-align: center;
+    color: rgb(100, 218, 130);
+}
+
+.titulo_produto:hover{
+    filter: brightness(150%);
+    color: rgb(198, 226, 95);
+    transition: 1s;
+}
+
+.titulo_produto:not(:hover){
+    filter: brightness(100%);
+    transition: 1s;
+}
+
+aside{
+    font-family: Chakra Petch,Syncopate,Arial, Helvetica, sans-serif;
+    padding-top: 20%;
+    padding-left: 22%;
+    width: 400px;
+    height: 300px;
+    float: left;
+
+}
+
+
+
+
+
+
+img{
+    margin-left: 200px;
+}
+
+
+img:hover{
+    filter: drop-shadow(0px 5px 20px rgb(135, 100, 233));
+    transition: 1s;
+}
+
+img:not(:hover){
+    filter: drop-shadow(0px 0px 0px rgba(44, 82, 52, 0));
+    transition: 2s;
+
+}
+
+
+button{
+    margin-top: 2%;
+    border-radius: 22px;
+    border-style: solid;
+    width: 400px;
+    height: 30px;
+    border-color: blueviolet;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+
+}
+
+button:hover{
+    border-color: aqua;
+    letter-spacing: 2px;
+    transition: 1s ;
+    
+}
+
+
+button:not(:hover){
+    border-color: blueviolet;
+    letter-spacing: 0px;
+    transition: 1s;
+}
+
+button:hover + .p {
+    filter: blur(5px);
+    border-color: aqua;
+    letter-spacing: 2px;
+    transition: 1s ;
+    
+}
+
+
+
+
+p:hover{
+    letter-spacing: 2px;
+    transition: 3s;
+}
+
+p:not(:hover){
+    letter-spacing: 0px;
+    transition: 3s;
+}
+
+@media only screen and (min-width: 400px) and (max-width:600px){
+    body{
+        background-color: rgb(48, 47, 47);
+        transition: 2s;
+
+    }
+    header{
+        padding: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        transition: 1s;
+
+    }
+}
+    
